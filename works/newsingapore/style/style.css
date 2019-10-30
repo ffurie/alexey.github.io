@@ -6,6 +6,8 @@
 
 /* FONTS */
 
+
+/* 
 @font-face {
   font-family: MyriadPro-Bold;
   src: url(../fonts/MyriadPro-Bold.otf);
@@ -24,10 +26,10 @@
 @font-face {
   font-family: quicksand-regular;
   src: url(../fonts/quicksand-light-regular.otf);
-}
+} */
 
+@import 'https://fonts.googleapis.com/css?family=Rokkitt&display=swap';
 
-@import url('https://fonts.googleapis.com/css?family=Rokkitt&display=swap');
 
 body {
   margin: 0 auto;
