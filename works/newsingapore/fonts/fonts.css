@@ -2,20 +2,20 @@
 
 @font-face {
   font-family: MyriadPro-Bold;
-  src: url(fonts/MyriadPro-Bold.otf);
+  src: url(MyriadPro-Bold.otf);
 }
 
 @font-face {
   font-family: MyriadPro-Regular;
-  src: url(fonts/MyriadPro-Regular.otf);
+  src: url(MyriadPro-Regular.otf);
 }
 
 @font-face {
   font-family: Rokkitt;
-  src: url(fonts/Rokkitt-regular.ttf);
+  src: url(Rokkitt-regular.ttf);
 }
 
 @font-face {
   font-family: quicksand-regular;
-  src: url(fonts/quicksand-light-regular.otf);
+  src: url(quicksand-light-regular.otf);
 }
