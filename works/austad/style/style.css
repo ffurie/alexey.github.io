@@ -1,0 +1,660 @@
+/* Fonts */
+
+
+@font-face {
+  font-family: TSTARPRO-Light;
+  src: url(../fonts/TSTARPRO-Light.otf);
+}
+
+@font-face {
+    font-family: 'FontAwesome Pro Light';
+    src: url('../fonts/Font Awesome 5 Pro-Light-300.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+.fal {
+    font-family: 'FontAwesome Pro Light';
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.mgt1 {
+  margin-top: 40px;
+}
+
+
+/* .wrapper{
+  max-width: 1920px;
+  outline: 0px solid red;
+} */
+
+.parallax {
+    /* The image used */
+    background-image: url(../images/headerBg.jpg);
+
+    /* Set a specific height */
+    height: 975px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.headerBlock {
+  position: relative;
+  background-color: white;
+  opacity: 0.8;
+  top:40.8%;
+  height: 23%;
+  width: 33.9%;
+  margin-left: 19.5%;
+}
+
+@media only screen and (max-width: 1911px) {
+  .headerBlock {
+    height: 30.4%;
+
+  }
+}
+
+.headerBlock h2 {
+  font-family: TSTARPRO-Light;
+  font-size: 48px;
+  color:#040405;
+  padding:18px 34px 40px 34px;
+  font-weight: lighter;
+  line-height: 72px;
+}
+
+.button1 {
+  position: relative;
+  width: 190px;
+  height: 70px;
+  background-color: #E5483F;
+  outline: 2px solid #E5483F;
+  cursor: pointer;
+  top:-30px;
+  transition: all 0.3s ease 0s;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  margin-top: 393px;
+  margin-left: 23.3%;
+}
+
+.button1:hover {
+  background-color: #ffffff;
+  outline: 2px solid #E5483F;
+}
+
+.button1 a {
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: TSTARPRO-Light;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding:20px 0 19px 0;
+}
+
+.button1 a:hover {
+  color: #E5483F;
+}
+
+
+@media only screen and (max-width: 1784px) {
+  .headerBlock {
+    height: auto;
+
+  }
+}
+
+@media only screen and (max-width: 1006px) {
+  .headerBlock {
+    width: 66%;
+
+  }
+}
+
+
+@media only screen and (max-width: 595px) {
+  .headerBlock {
+    width: 66%;
+
+  }
+}
+
+
+/* Productos Block */
+
+
+.productosBlock {
+  outline: 0px solid blue;
+  height: 1170px;
+  background-color: #F7F6F8;
+}
+
+.productosBlock h3 {
+  padding-top: 24px;
+  font-family: TSTARPRO-Light;
+  font-size: 3em;
+  color: #212122;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+
+.productosBlock h4 {
+  font-family: TSTARPRO-Light;
+  font-size: 1.5em;
+  color: #d3d4d7;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+@media screen and (max-width: 976px) {
+  .productosBlock h4 {
+    margin-bottom: 4%;
+  }
+}
+
+/* Advantages Block */
+
+.advantagesBlock {
+
+  padding-bottom: 48px;
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.advantagesBlock h3 {
+  padding-top: 24px;
+  margin-bottom: 36px;
+  font-family: TSTARPRO-Light;
+  font-size: 3em;
+  color: #212122;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.advantagesBlock h4 {
+  font-family: TSTARPRO-Light;
+  font-size: 1.5em;
+  color: #d3d4d7;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.group1 h4,
+.group2 h4,
+.group3 h4 {
+  text-transform: none;
+  letter-spacing: normal;
+  color: #07090b;
+  margin-bottom: 24px;
+}
+
+.group1,
+.group2,
+.group3 {
+  display: inline-block;
+}
+
+.group2,
+.group3 {
+  vertical-align: top;
+}
+
+.group2 {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.advantagesContent {
+  margin-top: 45px;
+}
+
+
+.fa-history:before {
+  content: "\f1da";
+}
+.fa-usd-circle:before {
+  content: "\f2e8";
+}
+.fa-users:before {
+  content: "\f0c0";
+}
+
+
+.advantagesContent .fa-history,
+.advantagesContent .fa-usd-circle,
+.advantagesContent .fa-users {
+  font-size: 50px;
+  color: #DD483E;
+  display: block;
+  margin: 0 0 5px 0;
+}
+
+.advantagesContent p {
+  font-family: TSTARPRO-Light;
+  font-size: 1.125em;
+  color: #07090b;
+}
+
+
+/* Tower Block */
+
+
+.towersBlock {
+  outline: 0px solid red;
+}
+
+
+.towersContent {
+  border: 1px solid #E6E6E6;
+  padding-top: 22px;
+  padding-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 52px;
+}
+
+.towersBlock h3 {
+  margin-bottom: 36px;
+  font-family: TSTARPRO-Light;
+  font-size: 3em;
+  color: #212122;
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.towersBlock h4 {
+  font-family: TSTARPRO-Light;
+  font-size: 1.5em;
+  color: #d3d4d7;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 0.4%;
+}
+
+.towersGallery {
+  width: 100%;
+  max-width: 1470px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.towersGallery img {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* Contact Block */
+
+.contactBlock {
+  padding: 20px;
+  background-color: #22252b;
+}
+
+.contactContent {
+  text-align: center;
+  border: 1px solid #fff;
+  padding-top: 25px;
+  padding-bottom: 56px;
+}
+
+.contactContent h3 {
+  font-family: TSTARPRO-Light;
+  font-size: 3em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin-bottom: 36px;
+}
+
+.contactContent h4 {
+  font-family: TSTARPRO-Light;
+  font-size: 1.5em;
+  color: #d3d4d7;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: lighter;
+}
+
+.button2 {
+  width: 190px;
+  height: 70px;
+  background-color: #E5483F;
+  outline: 2px solid #E5483F;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  margin-top: 2.7%;
+  display: inline-block;
+
+
+}
+
+.button2:hover {
+  background-color: #ffffff;
+  outline: 2px solid #E5483F;
+}
+
+.button2 a {
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: TSTARPRO-Light;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding:20px 0 19px 0;
+}
+
+.button2 a:hover {
+  color: #E5483F;
+}
+
+
+
+/* FORM BLOCK */
+
+.form-block h3 {
+  font-family: TSTARPRO-Light;
+  font-size: 3em;
+  color: #212122;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+
+input {
+  width: 398px;
+  height: 40px;
+  background-color: #E4E8E8;
+  border: none;
+  outline: none;
+  font-family: TSTARPRO-Light;
+  font-size: 25px;
+  color: #b5b5b5;
+  margin: 1.6% 1%;
+  padding-left: 1.5%;
+}
+
+textarea {
+  padding: 1% 0 0 1.5%;
+  width: 73%;
+  max-width: 835px;
+  min-width: 320px;
+  height: 250px;
+  background-color: #E4E8E8;
+  border: none;
+  outline: none;
+  font-family: TSTARPRO-Light;
+  font-size: 25px;
+  color: #b5b5b5;
+  overflow: auto;
+  resize: none;
+}
+
+.button3 {
+  width: 190px;
+  height: 70px;
+  background-color: #E5483F;
+  outline: 2px solid #E5483F;
+  cursor: pointer;
+  top:-30px;
+  transition: all 0.3s ease 0s;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  margin-top: 2.8%;
+  display: inline-block;
+  margin-bottom: 2.9%;
+}
+
+.button3:hover {
+  background-color: #ffffff;
+  outline: 2px solid #E5483F;
+}
+
+.button3 a {
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: TSTARPRO-Light;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding:20px 0 19px 0;
+}
+
+.button3 a:hover {
+  color: #E5483F;
+}
+
+
+
+/* Contacts */
+
+.crr {
+  text-align: center;
+  padding-bottom: 49px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.contacts {
+  text-align: center;
+  padding-top: 23px;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline: 0px solid red;
+}
+
+.address,
+.phone,
+.email,
+.skype {
+  display: inline-block;
+  text-align: left;
+}
+
+.address,
+.phone,
+.email {
+  margin-right: 5%;
+}
+
+.contactsContent h4 {
+  font-family: TSTARPRO-Light;
+  font-size: 1.2em;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+
+.contactsContent p {
+  font-family: TSTARPRO-Light;
+  font-size: 1em;
+  color: #fff;
+}
+
+/* Footer */
+
+footer {
+  background-color: #22252b;
+  padding-top: 15px;
+  padding-bottom: 43px;
+  clear: both;
+}
+
+.social {
+  margin-right: 19%;
+
+  position: relative;
+  text-align: center;
+}
+
+.social ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social ul li a {
+  padding: 15px 15px 10px 15px;
+  background-color: #292d34;
+  border-radius: 50%;
+  transition: all 0.3s ease 0s;
+}
+
+.social ul li a:hover {
+  transition: 0.3s;
+  background-color: #363a43;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 1365px) {
+  .group1,
+  .group2,
+  .group3 {
+    display: block;
+    transition: 0.5s;
+  }
+
+  .group2 {
+    margin: 70px 0 70px 0;
+  }
+
+  .advantagesContent p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .social {
+    margin-left: 5px;
+    transition: 0.5s;
+  }
+
+  .footerBtn {
+    margin-right: 5px;
+    transition: 0.5s;
+  }
+}
+
+@media only screen and (max-width: 705px) {
+  .address,
+  .phone,
+  .email,
+  .skype {
+    display: block;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: 0.5s;
+  }
+
+  .contacts {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .contactsContent h4 {
+    font-size: 1.5em;
+  }
+
+  .contactsContent p {
+    font-size: 1.2em;
+  }
+
+  .social {
+    width: 98.9%;
+
+  }
+}
+
+
+@media only screen and (max-width: 1610px) {
+  .social {
+    margin-right: 20%;
+  }
+
+}
+
+@media only screen and (max-width: 1255px) {
+  .social {
+    margin-right: 21%;
+  }
+
+}
+
+
+@media only screen and (max-width: 920px) {
+  .social {
+    margin-right: 23.5%;
+  }
+
+}
+
+@media only screen and (max-width: 760px) {
+  .social {
+    margin-right: 25.5%;
+  }
+
+}
+
+
+@media only screen and (max-width: 497px) {
+  .social  ul li{
+    padding: 20px 0 20px 0;
+    outline: 0px solid blue;
+  }
+}
+
+
+@media only screen and (max-width: 431px) {
+  .towersGallery img {
+    width: 250px;
+    height: 250px;
+  }
+  input {
+    width: auto;
+  }
+}
+
+
+@media only screen and (max-width: 416px) {
+  .social {
+    width: 97.9%;
+  }
+}
