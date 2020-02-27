@@ -1,91 +1,157 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<meta name="author" content="Alexey Sbrodov">
-<title>Alexey Sbrodov</title>
-<link href="./css/css" rel="stylesheet">
-<link rel="icon" href="https://sbrodov.github.io/favicon.ico"/>
+<title>Test Job</title>
+<!--css-->
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/chosen.css">
+<link rel="stylesheet" href="style/fontawesome.css">
+<link rel="stylesheet" href="style/rangeslider.css">
+<link rel="stylesheet" href="style/simplebar.css">
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
 </head>
-
 <body>
-    <section id="main" class="flex flex-h align-h-center align-v-mid">
-        <pre><span class="yellow">#me</span> {
-  <span class="green">name</span><span class="sc">:</span><span class="blue"> Alexey Sbrodov;</span>
-  <span class="green">location</span><span class="sc">:</span><span class="blue"> Kurgan, Russian Federation;</span>
-  <span class="green">write me</span><span class="sc">:</span> <a href="mailto:sbrodov.alexey@gmail.com">mail</a>, <a href="https://t.me/furie">telegram</a><span class="blue">;</span></span>
-  <span class="green">call me</span><span class="sc">:</span> <a href="https://join.skype.com/invite/m7aZUMKLOCeg">skype</a><span class="blue">;</span>
-  <span class="green">live projects</span><span class="sc">:</span> <a href="https://sbrodov.github.io/liveprojects/">#link</a><span class="blue">;</span>
-  <span class="green">behance</span><span class="sc">:</span> <a href="https://www.behance.net/sbrodov">#link</a><span class="blue">;</span>
-}
-</pre>
-    </section>
-<style>
-    @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
-    body {
-        overflow: hidden;
-        cursor: default;
-        /* background: #282a36; */
-        background: #191D22;
-    }
-    section#main {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        align-items: center;
-        -ms-flex-align: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        width: 100vw;
-        height: 100vh;
-    }
-    section#main * {
-        font-family: "Roboto Mono", monospace;
-    }
-    section#main pre {
-        font-size: 21px;
-        font-weight: 400;
-        line-height: 145%;
-        color: rgb(248, 248, 242);
-        text-shadow: 0 0 10px rgba(248, 248, 242, 0.5);
-    }
-    span.blue {
-        color: rgb(189, 147, 249);
-        text-shadow: 0 0 10px rgba(189, 147, 249, 0.5);
-    }
-    span.green {
-        color: rgb(139, 233, 253);
-        text-shadow: 0 0 10px rgba(139, 233, 253, 0.5);
-    }
-    span.yellow {
-        color: rgb(75, 243, 116);
-        text-shadow: 0 0 10px rgba(75, 243, 116, 0.5);
-    }
-    section#main a,
-    section#main a:visited,
-    span.sc {
-        color: rgb(255, 121, 198);
-        text-shadow: 0 0 10px rgba(241, 250, 140, 0.5);
-    }
-    section#main a:hover {
-        cursor: pointer;
-        text-decoration: none;
-        color: rgb(245, 104, 191);
-        text-shadow: 0 0 10px rgba(245, 104, 191, 0.5);
-    }
-    @media (orientation:portrait) {
-        section#main pre {
-            font-size: 4vw;
-        }
-    }
-</style>
+  <div class="wrapper">
+    <div class="nav-wrapper">
+      <div class="mobile_nav">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul class="mobile_nav__menu">
+            <li><a href="#personal_information" class="nav__link">Личная информация</a></li>
+            <li><a href="#your_experience" class="nav__link">Опыт</a></li>
+            <li><a href="#javascript_skill" class="nav__link">JavaScript</a></li>
+            <li><a href="#about_me" class="nav__link">О себе</a></li>
+          </ul>
+      </div>
+      <nav class="nav viewport">
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a href="#personal_information" class="nav__link">Личная информация</a>
+          </li>
+          <li class="nav__item">
+            <a href="#your_experience" class="nav__link">Опыт</a>
+          </li>
+          <li class="nav__item">
+            <a href="#javascript_skill" class="nav__link">JavaScript</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about_me" class="nav__link">О себе</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+      <div class="form">
+        <div class="form-bg">
+          <div class="form__gradient"></div>
+          <h1 class="form__title">Анкета</h1>
+        </div>
+        <div class="form__content viewport">
+          <section id="personal_information" class="section personal_information">
+            <h2 class="form__content_title">Личная информация</h2>
+            <div class="form__input_container">
+              <span class="form__input_label">ФИО</span>
+              <input type="text" class="form__input" id="formName" placeholder="ФИО" name="fio" autocomplete="off" value="Сбродов Алексей Николаевич" required>
+            </div>
+            <div class="form__select_container">
+                <select class="form__select chosen-select required" style="display: none;">
+                    <option>Год рождения</option>
+                    <option>1998</option>
+                    <option>1997</option>
+                    <option>1996</option>
+                    <option>1995</option>
+                    <option>1994</option>
+                    <option selected>1993</option>
+                    <option>1992</option>
+                    <option>1991</option>
+                    <option>1990</option>
+                    <option>1989</option>
+                    <option>1988</option>
+                    <option>1987</option>
+                </select>
+            </div>
+            <div class="form__input_container">
+              <span class="form__input_label">Место проживания</span>
+              <input type="text" class="form__input" id="formName" placeholder="Место проживания" name="place" autocomplete="off" value="Курган" required>
+            </div>
+            <div class="form__input_container">
+              <span class="form__input_label">Skype</span>
+              <input type="text" class="form__input" id="formName" placeholder="Skype" name="skype" autocomplete="off" value="sbrodov.alexey" required>
+            </div>
+            <div class="form__input_container">
+              <span class="form__input_label">E-mail</span>
+              <input type="text" class="form__input" id="formName" placeholder="E-mail" name="email" autocomplete="off" value="sbrodov.alexey@gmail.com" required>
+            </div>
+          </section>
+          <section id="your_experience" class="section your_experience">
+            <h2 class="form__content_title">Расскажите о своем опыте</h2>
+            <div class="checkbox_content">
+              <div class="checkbox_group">
+                <input id="checkbox-first" type="checkbox" checked>
+                <label for="checkbox-first">БЭМ/OOCSS</label>
+                <input id="checkbox-second" type="checkbox" checked>
+                <label for="checkbox-second">Stylus/LESS/SASS</label>
+                <input id="checkbox-third" type="checkbox">
+                <label for="checkbox-third">Работаю с SVG</label>
+              </div>
+              <div class="checkbox_group">
+                <input id="checkbox-fourth" type="checkbox" checked>
+                <label for="checkbox-fourth" >Верстаю семантично</label>
+                <input id="checkbox-fifth" type="checkbox">
+                <label for="checkbox-fifth">ES2015/ES2016</label>
+                <input id="checkbox-sixth" type="checkbox" checked>
+                <label for="checkbox-sixth">Gulp/GRUNT</label>
+              </div>
+              <div class="checkbox_group">
+                <input id="checkbox-seventh" type="checkbox">
+                <label for="checkbox-seventh">Webpack</label>
+                <input id="checkbox-eighth" type="checkbox" checked>
+                <label for="checkbox-eighth">jQuery</label>
+                <input id="checkbox-ninth" type="checkbox" checked>
+                <label for="checkbox-ninth">Использую Git</label>
+              </div>
+            </div>
+          </section>
+          <section id="javascript_skill" class="section javascript_skill">
+            <h2 class="form__content_title">Уровень владения JavaScript</h2>
+            <div class="skill_level_marks_container">
+              <div class="skill_level_mark clearfix">
+                <div class="skill_level_mark_text">Не владею</div>
+                <div class="skill_level_mark_line"></div>
+              </div>
+              <div class="skill_level_mark">
+                <div class="skill_level_mark_text">Использую готовые<br> решения</div>
+                <div class="skill_level_mark_line"></div>
+              </div>
+              <div class="skill_level_mark">
+                <div class="skill_level_mark_text">Использую готовые решения<br> и умею их переделывать</div>
+                <div class="skill_level_mark_line"></div>
+              </div>
+              <div class="skill_level_mark right_mark">
+                <div class="skill_level_mark_text">Пишу сложный JS с нуля</div>
+                <div class="skill_level_mark_line skill_level_mark_line_right"></div>
+              </div>
+            </div>
+            <div class="block-left slider-wrapper">
+                <input type="range" step="0.1">
+            </div>
+          </section>
+          <section id="about_me" class="section about_me">
+            <h2 class="form__content_title">Расскажите о себе</h2>
+            <div class="about_me_content">
+              <textarea class="form__textarea" id="formMessage" placeholder="Понравилась тем, что..." name="message" required></textarea>
+              <button type="submit" value="submit" class="button" name="submit"><span>Готово</span></button>
+            </div>
+          </section>
+        </div>
+      </div>
+  </div>
+<!--scripts-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/chosen.jquery.js"></script>
+<script src="js/rangeslider.js"></script>
+<script src="js/init.js"></script>
 </body>
 </html>
