@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test Job</title>
+<!--css-->
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/chosen.css">
+<link rel="stylesheet" href="style/fontawesome.css">
+<link rel="stylesheet" href="style/rangeslider.css">
+<link rel="stylesheet" href="style/simplebar.css">
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="nav-wrapper">
+      <div class="mobile_nav">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul class="mobile_nav__menu">
+            <li><a href="#personal_information" class="nav__link">Личная информация</a></li>
+            <li><a href="#your_experience" class="nav__link">Опыт</a></li>
+            <li><a href="#javascript_skill" class="nav__link">JavaScript</a></li>
+            <li><a href="#about_me" class="nav__link">О себе</a></li>
+          </ul>
+      </div>
+      <nav class="nav viewport">
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a href="#personal_information" class="nav__link">Личная информация</a>
+          </li>
+          <li class="nav__item">
+            <a href="#your_experience" class="nav__link">Опыт</a>
+          </li>
+          <li class="nav__item">
+            <a href="#javascript_skill" class="nav__link">JavaScript</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about_me" class="nav__link">О себе</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+      <div class="form">
+        <div class="form-bg">
+          <div class="form__gradient"></div>
+          <h1 class="form__title">Анкета</h1>
+        </div>
+        <div class="form__content viewport">
+          <section id="personal_information" class="personal_information">
+            <img src="images/icon_info.png" alt="Info" class="form__content_icon">
+            <h2 class="form__content_title">Личная информация</h2>
+            <div class="form__input_container">
+              <span class="form__input_label">ФИО</span>
+              <input type="text" class="form__input" placeholder="ФИО" name="fio" autocomplete="off" value="Сбродов Алексей Николаевич" required>
+            </div>
+            <div class="form__select_container">
+                <select id="chosen_select" class="form__select chosen-select required" style="display: none;">
+                    <option>Год рождения</option>
+                    <option>1998</option>
+                    <option>1997</option>
+                    <option>1996</option>
+                    <option>1995</option>
+                    <option>1994</option>
+                    <option selected>1993</option>
+                    <option>1992</option>
+                    <option>1991</option>
+                    <option>1990</option>
+                    <option>1989</option>
+                    <option>1988</option>
+                    <option>1987</option>
+                </select>
+            </div>
+            <div class="form__input_container">
+              <span class="form__input_label">Место проживания</span>
+              <input type="text" class="form__input" placeholder="Место проживания" name="place" autocomplete="off" value="Курган" required>
+            </div>
+            <div class="form__input_container">
+              <span class="form__input_label">Skype</span>
+              <input type="text" class="form__input" placeholder="Skype" name="skype" autocomplete="off" value="sbrodov.alexey" required>
+            </div>
+            <div class="form__input_container">
+              <span class="form__input_label">E-mail</span>
+              <input type="text" class="form__input" placeholder="E-mail" name="email" autocomplete="off" value="sbrodov.alexey@gmail.com" required>
+            </div>
+          </section>
+          <section id="your_experience" class="your_experience">
+            <img src="images/icon_experience.png" alt="Experience" class="form__content_icon">
+            <h2 class="form__content_title">Расскажите о своем опыте</h2>
+            <div class="checkbox_content">
+              <div class="checkbox_group">
+                <input id="checkbox-first" type="checkbox" checked>
+                <label for="checkbox-first">БЭМ/OOCSS</label>
+                <input id="checkbox-second" type="checkbox" checked>
+                <label for="checkbox-second">Stylus/LESS/SASS</label>
+                <input id="checkbox-third" type="checkbox">
+                <label for="checkbox-third">Работаю с SVG</label>
+              </div>
+              <div class="checkbox_group">
+                <input id="checkbox-fourth" type="checkbox" checked>
+                <label for="checkbox-fourth" >Верстаю семантично</label>
+                <input id="checkbox-fifth" type="checkbox">
+                <label for="checkbox-fifth">ES2015/ES2016</label>
+                <input id="checkbox-sixth" type="checkbox" checked>
+                <label for="checkbox-sixth">Gulp/GRUNT</label>
+              </div>
+              <div class="checkbox_group">
+                <input id="checkbox-seventh" type="checkbox">
+                <label for="checkbox-seventh">Webpack</label>
+                <input id="checkbox-eighth" type="checkbox" checked>
+                <label for="checkbox-eighth">jQuery</label>
+                <input id="checkbox-ninth" type="checkbox" checked>
+                <label for="checkbox-ninth">Использую Git</label>
+              </div>
+            </div>
+          </section>
+          <section id="javascript_skill" class="javascript_skill">
+            <img src="images/icon_js.png" alt="JS" class="form__content_icon">
+            <h2 class="form__content_title">Уровень владения JavaScript</h2>
+            <div class="skill_level_marks_container">
+              <div class="skill_level_mark clearfix">
+                <div class="skill_level_mark_text">Не владею</div>
+                <div class="skill_level_mark_line"></div>
+              </div>
+              <div class="skill_level_mark">
+                <div class="skill_level_mark_text">Использую готовые<br> решения</div>
+                <div class="skill_level_mark_line"></div>
+              </div>
+              <div class="skill_level_mark">
+                <div class="skill_level_mark_text">Использую готовые решения<br> и умею их переделывать</div>
+                <div class="skill_level_mark_line"></div>
+              </div>
+              <div class="skill_level_mark right_mark">
+                <div class="skill_level_mark_text">Пишу сложный JS с нуля</div>
+                <div class="skill_level_mark_line skill_level_mark_line_right"></div>
+              </div>
+            </div>
+            <div class="block-left slider-wrapper">
+                <input type="range" step="0.1">
+            </div>
+          </section>
+          <section id="about_me" class="about_me">
+            <img src="images/icon_about.png" alt="About" class="form__content_icon">
+            <h2 class="form__content_title">Расскажите о себе</h2>
+            <div class="about_me_content">
+              <textarea class="form__textarea" placeholder="Понравилась тем, что..." name="message" required></textarea>
+              <button type="submit" value="submit" class="button" name="submit"><span>Готово</span></button>
+            </div>
+          </section>
+        </div>
+      </div>
+  </div>
+<!--scripts-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/chosen.jquery.js"></script>
+<script src="js/rangeslider.js"></script>
+<script src="js/init.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.js"></script>
+</body>
+</html>
